@@ -908,6 +908,7 @@ img {
 }
 
 .modal-input-textarea {
+  display: block;
   height: 120px;
   margin-top: 4px;
   margin-bottom: 20px;
