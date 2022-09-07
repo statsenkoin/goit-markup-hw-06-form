@@ -440,46 +440,61 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-          <label class="modal-form-label label-name">
-            Ім'я
-            <span class="input-thumb">
-              <input class="modal-input-name modal-input" type="text" name="name" required />
-              <svg class="modal-input-name-icon input-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal-form-label label-tel">
-            Телефон
-            <span class="input-thumb">
-              <input class="modal-input-tel modal-input" type="tel" name="tel" />
-              <svg class="modal-input-tel-icon input-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal-form-label label-email">
-            Пошта
-            <span class="input-thumb">
-              <input class="modal-input-email modal-input" type="email" name="email" required />
-              <svg class="modal-input-email-icon input-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-email-black"></use>
-              </svg>
-            </span>
-          </label>
-          <label class="modal-form-label label-comment">
-            Коментар
-            <textarea
-              class="modal-input-textarea modal-input"
-              name="comment"
-              placeholder="Введіть текст"
-            ></textarea>
-          </label>
+          <label for="user-name" class="modal-form-label label-name">Ім'я*</label>
+          <div class="input-thumb">
+            <input
+              class="modal-input-name modal-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              required
+            />
+            <svg class="modal-input-name-icon input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+
+          <label for="user-tel" class="modal-form-label label-tel">Телефон*</label>
+          <div class="input-thumb">
+            <input
+              class="modal-input-tel modal-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              required
+            />
+            <svg class="modal-input-tel-icon input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <label for="user-email" class="modal-form-label label-email">Пошта*</label>
+          <div class="input-thumb">
+            <input
+              class="modal-input-email modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+            />
+            <svg class="modal-input-email-icon input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+
+          <label for="user-comment" class="modal-form-label label-comment">Коментар</label>
+          <textarea
+            class="modal-input-textarea modal-input"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Введіть текст"
+          ></textarea>
+
           <label class="modal-form-label label-checkbox">
             <input
               class="modal-input-checkbox"
               type="checkbox"
-              name="checkbox-agreement"
+              name="user-checkbox-agreement"
               required
             />
             <svg class="modal-input-checkbox-icon" width="16" height="15">
@@ -489,7 +504,7 @@
             <a class="modal-link-agreement" href="">Умови договору</a>
           </label>
 
-          <button class="modal-btn button" type="submit">Відправити</button>
+          <button class="modal-btn-submit button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
